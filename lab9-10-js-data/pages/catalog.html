@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>DevData | Каталог</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/main.js" defer></script>
+    <script src="../js/catalog.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><strong>Dev</strong>Data</div>
+        <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link">Головна</a></li>
+            <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+            <li><a href="contact.html" class="nav-link">Контакти</a></li>
+        </ul>
+        <button class="theme-toggle">🌓</button>
+    </nav>
+
+    <main class="content-container">
+        <h1>Наші послуги</h1>
+        <div class="toolbar">
+            <input type="text" id="search" placeholder="Пошук...">
+            <select id="category-filter">
+                <option value="all">Усі категорії</option>
+                <option value="frontend">Frontend</option>
+                <option value="work">Work</option>
+                <option value="design">Design</option>
+            </select>
+            <select id="sort-filter">
+                <option value="default">Сортування</option>
+                <option value="price-asc">Найдешевші</option>
+                <option value="price-desc">Найдорожчі</option>
+            </select>
+        </div>
+
+        <div id="catalog-grid" class="projects-grid"></div>
+        <button id="load-more" class="filter-btn" style="margin-top:2rem;" hidden>Показати ще</button>
+    </main>
+
+    <div id="details-modal" class="modal" hidden>
+        <div class="modal-content">
+            <span class="close-modal" onclick="this.parentElement.parentElement.hidden=true">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Created by Геворгян Артем</p>
+    </footer>
+</body>
+</html>
