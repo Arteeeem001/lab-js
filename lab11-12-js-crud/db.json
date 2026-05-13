@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "title": "Landing Page",
+      "category": "frontend",
+      "price": 400,
+      "description": "Швидкий лендинг на HTML/CSS.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500&auto=format&fit=crop"
+    },
+    {
+      "id": "2",
+      "title": "E-Commerce App",
+      "category": "work",
+      "price": 1200,
+      "description": "Магазин з кошиком та оплатою.",
+      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=500&auto=format&fit=crop"
+    }
+  ]
+}

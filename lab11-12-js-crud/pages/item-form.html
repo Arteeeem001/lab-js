@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адмінка | CRUD</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/main.js" type="module" defer></script>
+    <script src="../js/form.js" type="module" defer></script>
+</head>
+<body class="theme-dark">
+    <nav class="navbar">
+        <div class="logo"><strong>Dev</strong>Data CRUD</div>
+        <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link">Головна</a></li>
+            <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+            <li><a href="item-form.html" class="nav-link is-active">Адмінка</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-container">
+        <h1 id="form-title">Управління базою даних</h1>
+        
+        <form id="item-form" class="admin-form" style="max-width: 500px; margin: 2rem auto; background: var(--card-bg); padding: 2rem; border-radius: 20px;">
+            <input type="hidden" id="item-id">
+            <input type="text" id="title" placeholder="Назва послуги" required style="width:100%; margin-bottom:1rem; padding:0.8rem; border-radius:10px; background:rgba(0,0,0,0.3); color:white; border:1px solid rgba(255,255,255,0.1);">
+            <input type="text" id="image" placeholder="URL зображення" style="width:100%; margin-bottom:1rem; padding:0.8rem; border-radius:10px; background:rgba(0,0,0,0.3); color:white; border:1px solid rgba(255,255,255,0.1);">
+            <select id="category" style="width:100%; margin-bottom:1rem; padding:0.8rem; border-radius:10px; background:rgba(0,0,0,0.3); color:white; border:1px solid rgba(255,255,255,0.1);">
+                <option value="frontend">Frontend</option>
+                <option value="design">Design</option>
+                <option value="work">Work</option>
+            </select>
+            <input type="number" id="price" placeholder="Ціна ($)" required style="width:100%; margin-bottom:1rem; padding:0.8rem; border-radius:10px; background:rgba(0,0,0,0.3); color:white; border:1px solid rgba(255,255,255,0.1);">
+            <textarea id="description" placeholder="Опис" required style="width:100%; margin-bottom:1rem; padding:0.8rem; border-radius:10px; background:rgba(0,0,0,0.3); color:white; border:1px solid rgba(255,255,255,0.1); height:80px;"></textarea>
+            <button type="submit" class="filter-btn" id="submit-btn" style="width:100%;">Зберегти зміни</button>
+        </form>
+
+        <div id="admin-list" style="margin-top: 3rem;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Created by Геворгян Артем</p>
+    </footer>
+</body>
+</html>

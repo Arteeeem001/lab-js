@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --primary: #6366f1;
+    --bg: #0f172a;
+    --text: #f1f5f9;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --nav-bg: rgba(15, 23, 42, 0.85);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 10%; background: var(--nav-bg); backdrop-filter: blur(12px);
+    position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-list { display: flex; list-style: none; gap: 2rem; }
+.nav-link { text-decoration: none; color: var(--text); opacity: 0.6; font-weight: 500; }
+.nav-link.is-active { opacity: 1; color: var(--primary); border-bottom: 2px solid var(--primary); }
+
+.hero-wrapper { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 10%; }
+.hero-wrapper h1 { font-size: 3.5rem; margin: 0 0 1.5rem 0; }
+
+.content-container { padding: 3rem 10%; flex: 1; }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: var(--card-bg); padding: 2rem; border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1); text-align: left;
+}
+
+.filter-btn { padding: 0.8rem 2rem; border-radius: 12px; border: none; background: var(--primary); color: white; cursor: pointer; font-weight: 600; }
+
+footer { padding: 2rem; text-align: center; opacity: 0.6; margin-top: auto; }
