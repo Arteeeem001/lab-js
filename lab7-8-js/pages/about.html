@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про мене | DevStage</title>
+    <!-- Підключаємо той самий CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- Підключаємо той самий JS -->
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><strong>Dev</strong>Stage</div>
+        <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link">Головна</a></li>
+            <li><a href="about.html" class="nav-link">Про нас</a></li>
+            <li><a href="contact.html" class="nav-link">Контакти</a></li>
+        </ul>
+        <button class="theme-toggle">🌓 Тема</button>
+    </nav>
+
+    <main style="padding: 4rem 10%;">
+        <header style="text-align: center; margin-bottom: 4rem;">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Про проєкт</h1>
+            <p style="opacity: 0.7; max-width: 600px; margin: 0 auto;">
+                Цей сайт створений як частина практичної роботи з вивчення сучасних методів фронтенд-розробки. 
+                Тут поєднано чистий код та актуальний дизайн.
+            </p>
+        </header>
+
+        <!-- ПУНКТ 6: Вкладки/Картки для навичок -->
+        <section class="about-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="service-card" style="text-align: left;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">🚀</div>
+                <h3 style="margin-bottom: 1rem;">Технології</h3>
+                <ul style="list-style: none; opacity: 0.8;">
+                    <li style="margin-bottom: 0.5rem;">• Сучасний HTML5 & Семантика</li>
+                    <li style="margin-bottom: 0.5rem;">• CSS3 (Flexbox, Grid, Variables)</li>
+                    <li style="margin-bottom: 0.5rem;">• Чистий JavaScript (ES6+)</li>
+                </ul>
+            </div>
+
+            <div class="service-card" style="text-align: left;">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">🛠️</div>
+                <h3 style="margin-bottom: 1rem;">Інструменти</h3>
+                <ul style="list-style: none; opacity: 0.8;">
+                    <li style="margin-bottom: 0.5rem;">• Робота з DOM та подіями</li>
+                    <li style="margin-bottom: 0.5rem;">• Збереження стану в LocalStorage</li>
+                    <li style="margin-bottom: 0.5rem;">• Валідація форм та чернетки</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Додатковий контент для акордеона або деталей (Пункт 6) -->
+        <section style="margin-top: 4rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Деталі розробки</h2>
+            <div class="accordion-item">
+                <div class="accordion-header">Як працює локальне сховище?</div>
+                <div class="accordion-content">
+                    Ми використовуємо <code>localStorage</code> для того, щоб сайт "запам'ятовував" обрану вами тему 
+                    та ваші введені дані у формі навіть після перезавантаження сторінки.
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Чи адаптивний цей дизайн?</div>
+                <div class="accordion-content">
+                    Так, завдяки використанню CSS Grid та Flexbox, сайт коректно відображається як на великих моніторах, 
+                    так і на смартфонах.
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-top: 4rem;">
+            <a href="../index.html" class="nav-link" style="opacity: 1; color: var(--primary);">← Повернутися на головну</a>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 3rem; border-top: 1px solid rgba(0,0,0,0.05);">
+        <p>&copy; <span id="current-year"></span> Created by Геворгян Артем</p>
+    </footer>
+
+    <button class="back-to-top" hidden>↑</button>
+</body>
+</html>
